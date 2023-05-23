@@ -5,7 +5,7 @@ const dotenv = require('dotenv')
 dotenv.config();
 
 async function main() {
-    const address = process.env.ADDRESS
+    const address = process.env.CHAIN_URL
     const privateKey = process.env.PRIVATE_KEY;
 
     const provider = new ethers.JsonRpcProvider(address);
